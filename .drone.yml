@@ -11,7 +11,7 @@ clone:
 
 node:
   cloud: tencent
-  location: beijing
+  location: hongkong
 
 volumes:
   - name: cache
