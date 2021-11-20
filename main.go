@@ -14,6 +14,12 @@ import (
 	_ "github.com/dubbogo/triple/pkg/triple"
 )
 
+var (
+	BuildTime  string
+	GoVersion  string
+	GitMessage string
+)
+
 func main() {
 	config.SetProviderService(&service.CustomerService{})
 	err := config.Load(config.WithPath("conf/dubbo.yaml"))
@@ -22,6 +28,11 @@ func main() {
 		return
 	}
 	initSignal()
+}
+
+func init() {
+	msg := fmt.Sprintf("BuildAt: %s\nBuildBy: %s\nGit：%s", BuildTime, GoVersion, GitMessage)
+	fmt.Println(msg)
 }
 
 func initSignal() {
