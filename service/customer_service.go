@@ -5,6 +5,7 @@ import (
 	"dubbo.apache.org/dubbo-go/v3/common/logger"
 	"github.com/fastmall/customer/api"
 	"math/rand"
+	"os"
 	"time"
 )
 
@@ -13,10 +14,12 @@ type CustomerService struct {
 }
 
 func (c CustomerService) CreateCustomer(ctx context.Context, req *api.CreateCustomerRequest) (*api.CreateCustomerResponse, error) {
-	logger.Info("receive invoke :%v", req)
+	logger.Infof("receive invoke :%v", req)
 	rand.Seed(time.Now().UnixNano())
+	hostname, _ := os.Hostname()
 	res := api.CreateCustomerResponse{
-		UserId: rand.Int63(),
+		CustomerId: rand.Int63(),
+		Token:      "from:" + hostname,
 	}
 	return &res, nil
 }

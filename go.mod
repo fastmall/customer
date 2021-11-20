@@ -2,6 +2,8 @@ module github.com/fastmall/customer
 
 go 1.17
 
+replace github.com/fastmall/customer/api => ./api
+
 require (
 	dubbo.apache.org/dubbo-go/v3 v3.0.0-rc4-1
 	github.com/dubbogo/triple v1.1.5
