@@ -37,9 +37,9 @@ steps:
         - master
         - main
     settings:
-      repo:  registry.cn-shanghai.aliyuncs.com/fastmall/customer
+      repo:  registry.cn-hongkong.aliyuncs.com/fastmall/customer
       tags: latest
-      registry: registry.cn-shanghai.aliyuncs.com
+      registry: registry.cn-hongkong.aliyuncs.com
       username:
         from_secret: registry-username
       password:
@@ -65,7 +65,7 @@ steps:
       script:
         - cd /var/docker/fastmall
         - echo "docker login"
-        - docker login --username=${username} -p ${password} registry.cn-shanghai.aliyuncs.com
+        - docker login --username=${username} -p ${password} registry.cn-hongkong.aliyuncs.com
         - echo "pulling image"
         - docker-compose pull -q
         - docker-compose down && docker-compose up -d
