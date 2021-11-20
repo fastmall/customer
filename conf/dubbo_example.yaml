@@ -1,0 +1,13 @@
+dubbo:
+  registries:
+    etcd:
+      protocol: etcdv3
+      address: xxx.xxx.com:2379
+  protocols:
+    triple:
+      name: tri
+      port: 20000
+  provider:
+    services:
+      CustomerService:
+        interface: com.jeongen.fastmall.customer.CustomerService
