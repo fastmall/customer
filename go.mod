@@ -4,10 +4,8 @@ go 1.17
 
 require (
 	dubbo.apache.org/dubbo-go/v3 v3.0.0-rc4-1
-	github.com/dubbogo/grpc-go v1.42.5-triple
-	github.com/dubbogo/triple v1.1.3
-	github.com/golang/protobuf v1.5.2
-	google.golang.org/protobuf v1.27.1
+	github.com/dubbogo/triple v1.1.5
+	github.com/fastmall/customer/api v0.0.2
 )
 
 require (
@@ -30,6 +28,7 @@ require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/dubbogo/go-zookeeper v1.0.3 // indirect
 	github.com/dubbogo/gost v1.11.19 // indirect
+	github.com/dubbogo/grpc-go v1.42.6-triple // indirect
 	github.com/emicklei/go-restful/v3 v3.7.1 // indirect
 	github.com/fsnotify/fsnotify v1.5.1 // indirect
 	github.com/ghodss/yaml v1.0.0 // indirect
@@ -45,6 +44,7 @@ require (
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/mock v1.4.4 // indirect
+	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/google/gofuzz v1.0.0 // indirect
 	github.com/google/uuid v1.3.0 // indirect
@@ -92,6 +92,8 @@ require (
 	github.com/spf13/viper v1.7.1 // indirect
 	github.com/subosito/gotenv v1.2.0 // indirect
 	github.com/toolkits/concurrent v0.0.0-20150624120057-a4371d70e3e3 // indirect
+	github.com/uber/jaeger-client-go v2.29.1+incompatible // indirect
+	github.com/uber/jaeger-lib v2.4.1+incompatible // indirect
 	github.com/ugorji/go/codec v1.2.6 // indirect
 	github.com/zouyx/agollo/v3 v3.4.5 // indirect
 	go.etcd.io/etcd/api/v3 v3.5.1 // indirect
@@ -108,6 +110,7 @@ require (
 	golang.org/x/text v0.3.6 // indirect
 	google.golang.org/genproto v0.0.0-20211104193956-4c6863e31247 // indirect
 	google.golang.org/grpc v1.42.0 // indirect
+	google.golang.org/protobuf v1.27.1 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/ini.v1 v1.51.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
