@@ -10,8 +10,8 @@ clone:
   depth: 1
 
 node:
-  cloud: ali
-  location: hongkong
+  cloud: tencent
+  location: beijing
 
 volumes:
   - name: cache
