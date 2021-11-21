@@ -67,7 +67,7 @@ steps:
         - echo "docker login"
         - docker login --username=${username} -p ${password} registry.cn-hongkong.aliyuncs.com
         - echo "pulling image"
-        - docker-compose pull -q
-        - docker-compose down && docker-compose up -d
+        - docker-compose pull -q customer
+        - docker-compose rm -s -f customer && docker-compose up -d customer
         - sleep 5
         - docker-compose logs --tail=200
