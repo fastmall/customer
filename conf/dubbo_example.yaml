@@ -1,8 +1,8 @@
 dubbo:
   registries:
     etcd:
-      protocol: etcdv3
-      address: xxx.xxx.com:2379
+      protocol: zookeeper
+      address: zoo1:2181
   protocols:
     triple:
       name: tri
@@ -11,3 +11,10 @@ dubbo:
     services:
       CustomerService:
         interface: com.jeongen.fastmall.customer.CustomerService
+
+  application:
+    version: 0.0.1
+  metrics:
+    enable: true # default is true
+    path: /metrics # default is /metrics
+    port: 9090 # default is 9090
