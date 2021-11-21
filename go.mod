@@ -7,8 +7,10 @@ replace github.com/fastmall/customer/api => ./api
 require (
 	dubbo.apache.org/dubbo-go/v3 v3.0.0-rc4-1
 	github.com/dubbogo/triple v1.1.5
+	github.com/fastmall/cart/api v0.0.0-20211121121733-6f1766d0b2d0
 	github.com/fastmall/customer/api v0.0.2
 	github.com/fastmall/goods/api v0.0.0-20211121092524-feee7221c5a6
+	github.com/fastmall/order/api v0.0.0-20211121125026-a7ef77c4009c
 )
 
 require (
